@@ -6,11 +6,12 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="/assets/icons/planta-de-cafe.png" type="image/x-icon">
-    <title>PreEntrega2Siviero</title>
+    <title>PreEntregaSiviero</title>
 </head>
 <body>
+    <!-- Header -->
     <header class="headerBox">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-lg-none">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,20 +28,33 @@
                 </ul>
             </div>
         </nav>
+        <div class="d-none d-lg-flex justify-content-between">
+            <a class="navegacionItem" href="index.html">Inicio</a>
+            <a class="navegacionItem" href="/pages/seccion1.html">Menú</a>
+            <a class="navegacionItem" href="/pages/seccion2.html">Reservas</a>
+            <a class="navegacionItem" href="/pages/seccion3.html">Nosotros</a>
+            <a class="navegacionItem" href="/pages/seccion4.html">Contacto</a>
+        </div>
     </header>
+
+    <!-- Main -->
     <main class="container mt-4">
-        <article>
-            <section>
+        <article class="row">
+            <section class="col-lg-6">
                 <h1 class="titulosH1">Bienvenidos</h1>
                 <p class="parafoDelIndex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non commodi, repellendus alias fugiat nostrum neque recusandae expedita corporis ut rerum in rem. Minus ratione suscipit fuga accusantium aspernatur ipsam dicta?</p>
-                <div class="imagenesAcompañantesDelParrafo">
+                <div class="imagenesAcompañantesDelParrafo d-flex">
                     <img class="imagenDelParrafo img-fluid" src="/assets/images/placeholder1.png" alt="">
-                    <img class="imagenDelParrafo img-fluid" src="/assets/images/placeholder1.png" alt="">
+                    <img class="imagenDelParrafo img-fluid ml-3" src="/assets/images/placeholder1.png" alt="">
                 </div>
-                <img class="fotoDeLaCafetaria img-fluid mt-3" src="/assets/images/placeholder1.png" alt="Foto de la cafeteria">
+            </section>
+            <section class="col-lg-6 d-flex align-items-center">
+                <img class="fotoDeLaCafetaria img-fluid" src="/assets/images/placeholder1.png" alt="Foto de la cafeteria">
             </section>
         </article>
     </main>
+
+    <!-- Footer -->
     <footer class="bg-dark text-white mt-4">
         <div class="container py-3 d-flex justify-content-between">
             <p class="textoDelFooter">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -50,6 +64,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- Scripts de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

@@ -10,13 +10,13 @@ body {
 }
 
 header {
-    background-color: #D6D6D6; /* Color para versión de PC */
+    background-color: #D6D6D6;
     margin: 20px 20px;
 }
 
 @media (max-width: 767px) {
     header {
-        background-color: transparent; /* Color transparente para versión móvil */
+        background-color: transparent;
     }
 }
 
@@ -38,14 +38,20 @@ header {
     color: black !important;
 }
 
-.main-content {
-    background-color: #D6D6D6;
-    opacity: 0.85;
+.headerBox .d-lg-flex .navegacionItem {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
-.navegacionItem {
-    text-decoration: none;
-    color: black;
+.headerBox .d-lg-flex .navegacionItem:first-child {
+    border-left: none;
+}
+
+.headerBox .d-lg-flex .navegacionItem:last-child {
+    border-right: none;
 }
 
 .bloqueDeColorRosa {
@@ -53,6 +59,7 @@ header {
     width: 512px;
     height: 512px;
 }
+
 footer {
     background-color: #252E38;
     height: 125px;
@@ -82,7 +89,16 @@ footer {
     align-items: end;
 }
 
-.imagenesAcompañantesDelParrafo img,
+.imagenesAcompañantesDelParrafo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.imagenesAcompañantesDelParrafo img {
+    margin: 0 10px;
+}
+
 .fotoDeLaCafetaria {
     margin: 10px 0;
 }
