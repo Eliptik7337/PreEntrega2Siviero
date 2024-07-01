@@ -5,13 +5,19 @@
     list-style: none;
 }
 
-body {
+html, body {
+    height: 100%;
     background-color: #495057;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     background-color: #D6D6D6;
-    margin: 20px 20px;
 }
 
 @media (max-width: 767px) {
@@ -35,7 +41,7 @@ header {
 }
 
 .nav-link {
-    color: black !important;
+    color: black;
 }
 
 .headerBox .d-lg-flex .navegacionItem {
@@ -64,7 +70,11 @@ footer {
     background-color: #252E38;
     height: 125px;
     width: 100%;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 0;
 }
 
 .cajaDeContenidoDelFooter {
@@ -89,16 +99,11 @@ footer {
     align-items: end;
 }
 
-.imagenesAcompañantesDelParrafo {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
 .imagenesAcompañantesDelParrafo img {
-    margin: 0 10px;
+    margin-right: 10px;
+    max-width: calc(50% - 5px);
 }
 
 .fotoDeLaCafetaria {
-    margin: 10px 0;
+    margin-left: 10px;
 }
