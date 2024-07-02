@@ -132,7 +132,6 @@ header {
 
 footer {
     background-color: #252E38;
-    height: 125px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -146,9 +145,12 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
 }
 
-.textoDelFooter {
+.footer-text {
+    display: flex;
+    flex-direction: column;
     color: #D6D6D6;
     font-size: 18px;
 }
