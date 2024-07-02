@@ -22,7 +22,7 @@ header {
     margin: 0 20px;
     padding: 10px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-radius: 10px;
 }
@@ -114,6 +114,14 @@ header {
     justify-content: center;
 }
 
+.titulosH1 {
+    font-size: 2em; /* Agranda el tamaño de la fuente del h1 */
+}
+
+.parafoDelIndex {
+    font-size: 1.2em; /* Agranda el tamaño de la fuente del párrafo */
+}
+
 .imagenesAcompañantesDelParrafo {
     display: flex;
     justify-content: space-between;
@@ -122,7 +130,8 @@ header {
 
 .imagenDelParrafo {
     max-width: calc(50% - 10px);
-    margin-right: 10px;
+    max-height: calc(60% - 10px);
+    margin: 10px 20px;
 }
 
 .fotoDeLaCafetaria {
@@ -163,7 +172,7 @@ footer {
 .qrAfip {
     margin: 10px;
     width: 60px;
-    height: 80px;
+    height: 60px;
 }
 
 .logoEnFooter {
@@ -199,11 +208,41 @@ footer {
         text-align: center;
     }
 
+    .navbar-current-page {
+        display: block;
+        color: black;
+        font-size: 18px;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .navbar-collapse::before {
+        content: attr(data-current-page);
+        display: block;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+    }
+
     .header-links {
         display: none;
     }
 
     .imagenesAcompañantesDelParrafo {
         display: none;
+    }
+
+    .col-left, .col-right {
+        flex: 1 1 100%;
+    }
+
+    .fotoDeLaCafetaria {
+        margin-top: 20px;
+        width: 100%;
+        order: 2; /* Mueve la imagen debajo del párrafo en la versión móvil */
+    }
+
+    .parafoDelIndex {
+        order: 1; /* Asegura que el párrafo esté encima de la imagen */
     }
 }
