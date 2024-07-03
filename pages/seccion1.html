@@ -3,47 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="../assets/icons/planta-de-cafe.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Seccion 1</title>
 </head>
 <body>
     <header class="headerBox">
-        <nav class="navegacionEnHeader">
-            <ul class="navegacionLinkList">
-                <li class="navegacionItem"><a href="../index.html">Inicio</a></li>
-                <li class="navegacionItem"><a href="./seccion1.html">Menú</a></li>
-                <li class="navegacionItem"><a href="./seccion2.html">Reservas</a></li>
-                <li class="navegacionItem"><a href="./seccion3.html">Nosotros</a></li>
-                <li class="navegacionItem"><a href="./seccion4.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar">
+            <input type="checkbox" id="navbar-toggle" class="navbar-toggle">
+            <label for="navbar-toggle" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                &#9776;
+            </label>
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/seccion1.html">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/seccion2.html">Reservas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/seccion3.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/seccion4.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <!-- El main de la sección correspondiente al menú tendrá 2 imágenes que contendrán ofertas de la cafetería con una descripción,
-    Mientras que en el lado derecho de la página hay un espacio reservado para el carrusel de imágenes o "slideshow".  -->
-    <main>
-        <section>
-            <article>
-                <h1 class="titulosH1">Menu</h1>
+    <main class="container">
+        <article class="row">
+            <section class="col-left">
+                <h1 class="titulosH1">Menú</h1>
                 <div class="cajaConLasOfertas">
-                    <img src="../assets/images/placeholder1.png" alt=""> <!-- Imagen sobre una oferta o promoción -->
-                    <p class="promocion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos voluptas fuga perspiciatis perferendis molestias explicabo quia laboriosam ipsa, deleniti earum?</p><!-- Detalles sobre la oferta o promoción -->
-                    <img src="../assets/images/placeholder1.png" alt=""> <!-- Imagen sobre una oferta o promoción -->
-                    <p class="promocion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos voluptas fuga perspiciatis perferendis molestias explicabo quia laboriosam ipsa, deleniti earum?</p><!-- Detalles sobre la oferta o promoción -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="imgPromocionLeft" src="/assets/images/pexels-mehmet-akif-gunduz-8095759-19164194.jpg" alt="">
+                            <p>Promoción 1: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos voluptas fuga perspiciatis perferendis molestias explicabo quia laboriosam ipsa, deleniti earum?</p>
+                            <img class="imgPromocionLeft" src="/assets/images/pexels-arda-kaykisiz-672105204-20002825.jpg" alt="">
+                            <p>Promoción 2: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos voluptas fuga perspiciatis perferendis molestias explicabo quia laboriosam ipsa, deleniti earum?</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="slideshowEnMenu">
-                    <!-- Espacio reservado para el slideshow -->
-                    <div class="bloqueDeColorRosa"></div>
-                </div>
-            </article>
-        </section>
+            </section>
+            <div class="col-right">
+                <img class="imgPromocionRight" src="/assets/images/pexels-lina-16550375.jpg" alt="">
+            </div>
+        </article>
     </main>
-    <footer>
-        <div class="cajaDeContenidoDelFooter">
-            <p class="textoDelFooter">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><img class="qrAfip" src="../assets/images/placeholder1.png" alt="QR AFIP"></a>
-            <img class="logoEnFooter" src="../assets/icons/planta-de-cafe.png" alt="Logo de la cafeteria">
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-text">
+                <p class="textoDelFooter">Aviso legal | Términos y condiciones | Política de privacidad</p>
+                <p class="textoDelFooter">Dirección: Calle Falsa 123, Ciudad Imaginaria, País Ficticio</p>
+            </div>
+            <div class="footer-icons">
+                <a href="https://www.afip.gob.ar/landing/default.asp"><img class="qrAfip" src="/assets/icons/qrcode_www.afip.gob.ar.png" alt="QR AFIP" width="60" height="80"></a>
+                <img class="logoEnFooter" src="/assets/icons/planta-de-cafe.png" alt="Logo de la cafeteria" width="45" height="45">
+            </div>
         </div>
     </footer>
 </body>
